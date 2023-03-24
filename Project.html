@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Improve your health</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      text-decoration: underline;
+      font-weight: lighter;
+      color: gold;
+    }
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: lighter;
+    }
+    p {
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+      margin-block-start: 1em;
+      margin-inline-end: 3em;
+    }
+    img {
+      width: 600px;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    li {
+      text-align: center;
+      margin: 0;
+      padding: 15px;
+      list-style: none;
+      font-size: 30px;
+    }
+    button {
+      display: block;
+      margin: auto;
+      color: white;
+      background-color: gold;
+      font-size: 15px;
+      border: 1px solid;
+      border-radius: 30px;
+      padding: 15px;
+      box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      margin-block-start: 3em;
+      margin-block-end: 3em;
+    }
+    button:hover {
+      transition: all 200ms ease-in-out;
+      background: white;
+      color: gold;
+      cursor: pointer;
+    }
+  </style>
+  <style>
+    .goodhygiene:hover {
+      color: rgb(127, 243, 50);
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+    .watersupply:hover {
+      color: aqua;
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+    .eat:hover {
+      color: blueviolet;
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+    .active:hover {
+      color: darkorange;
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+    .sleep:hover {
+      color: yellow;
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+    .readmore {
+      font-size: 15px;
+    }
+    body {
+      background: rgb(234, 192, 152);
+    }
+    .created {
+      text-align: center;
+      margin: auto;
+      font-size: 15px;
+    }
+  </style>
+  <body>
+    <h1>Improve Your Health!</h1>
+    <h2>Five ways to <em>improve</em> your health</h2>
+    <p>
+      WHO wants to be sick? At the very least, an illness is an inconvenience
+      and an expense. You not only feel bad, but when you are sick, you may not
+      be able to go to work or school, earn any money, or look after your
+      family. You may even need someone to look after you, and you may have to
+      pay for expensive medicines and treatment. Well has it been said that
+      “Prevention is better than cure.” Some illnesses cannot be avoided. Still,
+      there is much you can do to slow down or even prevent the onset of
+      illness. Consider five things that you can do today to get on the road to
+      better health.
+    </p>
+    <hr />
+    <img
+      src="https://assetsnffrgf-a.akamaihd.net/assets/m/102015202/univ/art/102015202_univ_cnt_1_md.jpg"
+    />
+    <hr />
+    <li>
+      <div class="goodhygiene">Practice good hygiene</div>
+    </li>
+    <li><div class="watersupply">Use a safe water supply</div></li>
+    <li><div class="eat">Watch what you eat</div></li>
+    <li>
+      <div class="active">Stay physically active</div>
+    </li>
+    <li>
+      <div class="sleep">Get enough Sleep</div>
+      <button>More Health Suggestions</button>
+      <a
+        href="https://www.jw.org/en/library/magazines/g201506/improve-your-health/"
+        target="_blank"
+        class="readmore"
+        >Read more on jw.org
+      </a>
+    </li>
+    <script>
+      function morehealthsuggestion() {
+        let name = prompt("what is your name?");
+        let email = prompt("what is your email?");
+        if (email) {
+          alert(
+            "Hello " +
+              name +
+              "! Check your inbox, 📩 more health suggestions will be emailed to you!🫡"
+          );
+        } else {
+          alert(
+            "☹️ sorry " +
+              name +
+              " we need an email for you in order to send you suggestions"
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", morehealthsuggestion);
+    </script>
+    <p class="created">This page was created by Tee Acheampong</p>
+  </body>
+</html>
